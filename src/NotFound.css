@@ -1,0 +1,25 @@
+.not-found-page {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(54, 111, 101, .12), transparent 54%), #f4f6f8;
+  color: #1c252b;
+  font-family: 'Aptos', 'Segoe UI Variable', 'Segoe UI', sans-serif;
+}
+
+.not-found-content { width: min(540px, 100%); }
+.not-found-code { margin: 0 0 15px; color: #39796d; font-size: 11px; font-weight: 750; letter-spacing: 1px; }
+.not-found-code span { padding: 0 4px; color: #aab5b4; }
+.not-found-content h1 { margin: 0; font-size: clamp(32px, 7vw, 52px); line-height: 1.08; letter-spacing: 0; }
+.not-found-copy { margin: 14px 0 28px; color: #647078; font-size: 15px; line-height: 1.6; }
+.not-found-home { display: inline-flex; min-height: 42px; align-items: center; padding: 0 16px; border-radius: 5px; background: #39796d; color: #fff; font-size: 13px; font-weight: 650; text-decoration: none; }
+.not-found-home:hover { background: #2e655c; }
+.not-found-home:focus-visible { outline: 2px solid #39796d; outline-offset: 3px; }
+
+@media (prefers-color-scheme: dark) {
+  .not-found-page { background: radial-gradient(ellipse at 50% 0%, rgba(74, 151, 137, .16), transparent 54%), #171c20; color: #edf1f1; }
+  .not-found-copy { color: #a8b3b5; }
+  .not-found-code { color: #8ac9bb; }
+}
